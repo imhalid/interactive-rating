@@ -1,5 +1,8 @@
 const selectedNumber = document.querySelectorAll(".number");
 const submitButton = document.querySelector("#submit");
+const main = document.querySelector(".main");
+const thankYou = document.querySelector(".thankYou");
+const point = document.querySelector("#point");
 
 const hangleSelect = (el) => {
   selectedNumber.forEach((item) => {
@@ -19,5 +22,8 @@ selectedNumber.forEach((item) => {
 });
 
 submitButton.addEventListener("click", () => {
+  main.style.display = "none";
+  thankYou.style.display = "flex";
+  point.innerHTML = selectedNowNumber;
   console.log(selectedNowNumber);
 });

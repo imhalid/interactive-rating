@@ -31,10 +31,9 @@ body {
 }
 
 .main {
-  position: relative;
   display: flex;
   flex-direction: column;
-  width: 415px;
+  width: 407px;
   background-color: var(--veryDarkBlue);
   padding: 32px;
   border-radius: 30px;
@@ -58,6 +57,7 @@ body {
 
 p {
   line-height: 1.5;
+  font-size: var(--paragraphSize);
 }
 
 h1 {
@@ -125,4 +125,30 @@ h1 {
 .numbers > ul > li.selected {
   background-color: var(--primaryOrange);
   color: var(--white);
+}
+
+/* THANK YOU PAGE */
+
+.thankYou {
+  display: none;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 407px;
+  background-color: var(--veryDarkBlue);
+  padding: 45px 32px;
+  border-radius: 30px;
+}
+
+.thankYouImage {
+  width: 150px;
+  padding-bottom: 35px;
+}
+
+.selectedNumberText {
+  color: var(--primaryOrange);
+  padding: 3px 20px;
+  background: var(--darkBlue);
+  border-radius: 100px;
 }
